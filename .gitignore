@@ -1,0 +1,6 @@
+.idea
+__pycache__
+venv/
+/staticfiles
+.DS_Store
+/scripts/dump.pg_dump

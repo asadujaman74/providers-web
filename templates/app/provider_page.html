@@ -1,0 +1,61 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<header class="bg-[#385444] border-b shadow-sm">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+        <div class="text-xl font-bold text-white">Riaz Counseling</div>
+        <div class="flex items-center space-x-4">
+            <nav class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-100 hover:text-green-100">How It Works</a>
+                <a href="providers/" class="text-gray-100 hover:text-green-100">For Providers</a>
+                <a href="#" class="text-gray-100 hover:text-green-100">About Alma</a>
+                <a href="#" class="text-gray-100 hover:text-green-100">Blog</a>
+            </nav>
+            <div class="flex space-x-4">
+                <button class="px-4 py-2 border border-gray-100 text-white rounded">Find a Therapist</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+  <div class="row mt-9 ms-9 d-flex flex-wrap">
+
+      <div class="border border-light shadow-lg p-3 mb-5 bg-white rounded mt-3 " style=" background : red;height: 350px;width: 670px">
+        <div class="d-flex ">
+        <div class="mt-4 ms-2">
+          <img class="rounded-circle" style="height:150px; width:150px" src="{% static 'img/2.jpg' %}" alt="Photo">
+        </div>
+          <div class="ms-9 mt-5">
+            <h1 style="font-size:28px" class="text-dark">Christina Hansson</h1>
+            <p>Psychotherapy, LMHC</p>
+            <span style="font-size:14px" class="bi bi-camera-video shadow-sm bg-white rounded"> Virtual and in-person sessions</span>
+            <span style="font-size:14px" class="bi bi-geo-alt shadow-sm bg-white rounded ms-3"> Licensed in OR and WA</span>
+          </div>
+        </div>
+        <p class="mt-4 ms-2">Chris Hansson works with adults who are looking for support for life transitions, such as grief and loss, and significant changes, such as childbirth, separation/divorce, job changes, substance use, and illness; as well as trauma/PTSD, ADHD, anxiety,</p>
+        <div class="foot mt-3 ms-2">
+          <span class="bi bi-bookmark-check" > Accepts insurance</span>
+          <span class="bi bi-calendar2-check ms-3"> 15-minute consultations available</span>
+        </div>
+
+      </div>
+
+      <div class="ms-20 mt-10 p-3 border border-light shadow-lg p-3 mb-5" style="height:112px; width:300px">
+        <div class="button ">
+          <button class="btn btn-primary w-100 " style="background:#497557;"type="button" name="button">Book a Consultation</button>
+        </div>
+        <div class="consultation mt-2">
+          <span style="font-size:14px;" class="bi bi-calendar ms-5">  Next available Tuesday</span>
+        </div>
+
+      </div>
+  </div>
+
+
+
+
+
+</div>
+{% endblock content %}
